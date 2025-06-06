@@ -4,12 +4,38 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors (Console)</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./game.css">
 </head>
 
 <body>
-    <H1>Rock Paper Scissors Game (console output)</H1>
-    <h2>open inspector console to see output. Refresh to run again.</h2>
+    <div class="ui-container">
+        <H1>Rock Paper Scissors Game</H1>
+        <h2>Click a choice below to start a round.   Refresh to start over.</h2>
+        <div class ="btn-container" ></div>
+        <div class="results">
+            <p class="result-txt"></p>
+            <table id = "scoreboard">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Player Choice</th>
+                        <th>Computer Choice</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>round#</td>
+                        <td>Rock</td>
+                        <td>Paper</td>
+                        <td>Computer Wins!</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <p id="stats"></p>
+        </div>
+    </div>
     <script src="script.js" defer></script>
 </body>
 
